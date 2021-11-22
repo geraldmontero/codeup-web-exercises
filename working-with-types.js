@@ -67,11 +67,12 @@ console.log(!!-1)
 !!0.1
 console.log(!!0.1)
 !!"hello"
-
+console.log(!!"hello")
 !!""
-
+console.log(!!"")
 !!''
-
+console.log(!!'')
 !!"false"
-
+console.log(!!"false")
 !!"0"
+console.log(!!"0")
