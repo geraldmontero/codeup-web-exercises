@@ -76,3 +76,40 @@ console.log(!!'')
 console.log(!!"false")
 !!"0"
 console.log(!!"0")
+// excersise # 2
+var sample = "Hello Codeup";
+console.log(sample.length);
+console.log(sample.toUpperCase())
+sample = sample + " Students ";
+console.log(sample)
+console.log(sample.replace(" Students", " Class"));
+console.log(sample.indexOf("c"));
+console.log(sample.indexOf("C"));
+console.log(sample.substring(6, 12));
+console.log(sample.substring(sample.indexOf("C"), sample.indexOf("p") + 1));
+// exercise # 3
+var littleMermaid = 3;
+var brotherBear = 5;
+var hercules = 1;
+console.log((littleMermaid + brotherBear + hercules) * 3);
+var google = 400;
+var amazon = 380;
+var facebook = 350;
+console.log((google * 6) + (facebook * 10) + (amazon * 4))
+
+var classNotFull = true;
+var noconflict = true;
+var enrolled = classNotFull && noconflict;
+
+var premium = true
+var numberOfItems = 2
+var notexpired = true
+var offer = notexpired && (numberOfItems > 2 || premium)
+
+var username = 'codeup';
+var password = 'notastrongpassword';
+var passwordAtleastFive = password.length >= 5;
+var passwordNoUser = password.lastIndexOf(username) === -1;
+var usernameMax = username.length <= 20;
+var noWhiteSpace = username.trim() && password.trim();
+
