@@ -1,25 +1,25 @@
 var a = 1;
-console.log( a );
+console.log(a);
 var b = a++;
-console.log( b );
+console.log(b);
 var c = ++a;
-console.log( c );
+console.log(c);
 var d = "hello";
-console.log( d );
+console.log(d);
 var e = false;
-console.log( e );
+console.log(e);
 d++;
-console.log( d );
+console.log(d);
 e++;
-console.log( e );
+console.log(e);
 var perplexed;
-console.log( perplexed );
+console.log(perplexed);
 perplexed + 2;
-console.log( perplexed)
+console.log(perplexed)
 var price = 2.7;
-console.log( price);
+console.log(price);
 price.toFixed(2);
-console.log( price);
+console.log(price);
 isNaN(0)
 console.log(isNaN(0))
 isNaN(1)
@@ -45,7 +45,7 @@ console.log(isNaN(true))
 isNaN("false")
 console.log(isNaN("false"))
 isNaN(false)
-console.log( isNaN(false))
+console.log(isNaN(false))
 // to illustrate why the isNaN() function is needed:
 NaN == NaN
 !true
@@ -101,10 +101,10 @@ var classNotFull = true;
 var noconflict = true;
 var enrolled = classNotFull && noconflict;
 
-var premium = true
-var numberOfItems = 2
-var notexpired = true
-var offer = notexpired && (numberOfItems > 2 || premium)
+var premium = true;
+var numberOfItems = 2;
+var notexpired = true;
+var offer = notexpired && (numberOfItems > 2 || premium);
 
 var username = 'codeup';
 var password = 'notastrongpassword';
