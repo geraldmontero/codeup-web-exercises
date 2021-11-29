@@ -76,13 +76,13 @@ function calculateTip(tip, total) {
 }
 
 console.log(calculateTip(.2,100))
-/*
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
-
+*/
 let tipPercent = prompt (" How much do you wanna tip")
 let totalBill = prompt ("What is the total Bill")
 let tipamount = calculateTip(tipPercent,totalBill )
@@ -104,7 +104,7 @@ alert("Your tip is " + tipamount )
  */
 
 function applyDiscount(price,discountPercent ) {
-    return (price + ( price * discountPercent))
+    return (price - ( price * discountPercent))
 
 }
 
