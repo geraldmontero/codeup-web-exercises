@@ -86,8 +86,8 @@ console.log(calculateTip(.2,100))
 let tipPercent = prompt (" How much do you wanna tip")
 let totalBill = prompt ("What is the total Bill")
 let tipamount = calculateTip(tipPercent,totalBill )
-let newTotal = tipamount + totalBill;
-alert("Your tip is " + tipamount )
+let newTotal = (parseInt( tipamount) + parseInt(totalBill));
+alert("Your tip is " + tipamount + "Your new total is " + newTotal )
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
