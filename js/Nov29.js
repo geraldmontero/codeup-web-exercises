@@ -1,3 +1,6 @@
+"use strict"
+
+/*
 function reverseString(str) { return str.split("")
     .reverse()
     .join();
@@ -52,4 +55,52 @@ let weather = "wild"
 letterGrade(studentOne)
 
 
+4 == "4" ? console.log("matches") : console.log("not matches")
 
+let weather = "sunny"
+weather === "sunny" ? weather = "rainy"
+    ? console.log("matches")
+    : console.log("not matches")
+    : console.log( "its sunny")
+
+let numGrade = 80
+let student = "steve"
+numGrade >= 80 || student == "steve"
+? console.log( "you got a B")
+    : console.log( "not a grade");
+
+let weather = "rainy";
+switch (weather) {
+    case "sunny":
+        console.log("sunglasses");
+        break;
+    case "rainy":
+        console.log("umbrellas");
+        break;
+    case "snowy":
+        console.log( bring jackets);
+        break;
+    case "tornado":
+        console.log("hide")
+
+}
+
+ */
+let studentGrade = 59
+
+switch (studentGrade) {
+    case 90:
+        console.log("A");
+        break;
+    case  80 :
+        console.log("B");
+        break;
+    case 70:
+        console.log("C");
+    case  60 :
+        console.log("D");
+        break;
+    case 59:
+        console.log("F")
+
+}
