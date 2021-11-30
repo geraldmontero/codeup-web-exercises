@@ -1,10 +1,12 @@
 "use strict"
-
+let first = 100
+let second = 200
+let third = 138
 function averageScore(scoreOne,scoreTwo,scoreThree) {return ((scoreOne + scoreTwo +scoreThree) / 3 )
 
 }
 
-console.log( averageScore(100,300,78))
+console.log( averageScore(first,second,third))
 
 function bestScore(topScore) { if (topScore % 5== 0 || topScore % 3 == 0){
     console.log("true")
@@ -50,6 +52,16 @@ function executeAll() {
 
 executeAll()
 
-let myFunction (firstName, lastName) return firstName + lastName; };
+function myFunction(firstName, lastName) {
+return (firstName + lastName) };
 
-function thatsNotMyName(name){ if(name = "Laura"){ return "that's me!, I'm " + "name"} } else { return "that's not my name" }
+function thatsNotMyName(name) {
+    if (name == "Laura") {
+        return ("that's me!, I'm " + name)
+    } else {
+        return "that's not my name"
+    }
+}
+
+console.log(myFunction("gerald", " montero"))
+console.log(thatsNotMyName("Gerald"))
