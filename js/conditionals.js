@@ -82,6 +82,7 @@ switch (analyzeColor) {
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+/*
 function analyzeColor(color) { if (color === "red"){
     alert("red like Blood")
 }else if (color === "orange"){
@@ -120,25 +121,23 @@ analyzeColor(pickColor)
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-function luck(number) {if (number === 0){
-    console.log("0")
-}else if (number === 1){
-    console.log(".1");
-}else if (number === 2){
-    console.log(".25");
-}else if (number === 3){
-    console.log(".35")
-}else if (number === 4){
-    console.log(.5)
-}else if (number === 5){
-    console.log("1")
+function calculateTotal(luckyNum, total) {
+if (luckyNum === 0){
+    return total;
+} else if (luckyNum === 1 ){
+    return (total - (total * .1))
+
+} else if (luckyNum === 2){
+    return (total - (total * .25))
+} else if (luckyNum === 3) {
+    return (total - (total * .35))
+} else if (luckyNum === 4){
+    return (total - (total * .5))
+}
 }
 
-}
-function calculateTotal(luckyNum, total) { return total - (luckyNum * total)
+console.log(calculateTotal(4,100))
 
-}
-calculateTotal(luck(4),100)
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -148,8 +147,9 @@ calculateTotal(luck(4),100)
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
-
+ var luckyNumber = Math.floor(Math.random() * 6);
+let totalbill = prompt(" what is your total bill" )
+alert( "your lucky number was  " + luckyNumber + " your total is  " +  calculateTotal(luckyNumber,totalbill))
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -168,3 +168,11 @@ calculateTotal(luck(4),100)
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+
+let r = confirm("Would you like to pick a number");
+if (r == true) {
+    prompt("Pick a number");
+} else {
+    txt = "You pressed Cancel!";
+}
