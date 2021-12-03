@@ -18,10 +18,19 @@
 
 
 // 4 //
-for(let i=1; i <= 10; i++ ){
-    console.log(i);
-    for (let j= 1; j <= i ; j++){
-        console.log(j)
-    }
 
+// for(let i=1; i<=9; i++)
+// {
+//     for( let j=1; j<=i; j++)
+//         console.log(i)
+// }
+for (i = 1; i <= 9; i++) {
+    let res = [];
+    for (a = 1; a <= i; a++) {
+        res.push(i);
+    }
+    console.log(res.join(""));
 }
+// 5 //
+for (let b = 100; b > 0; b-=5) {
+    console.log(b); }
