@@ -65,9 +65,9 @@
     returnSecond(numArray)
 
 
-    function returnThird(array) {
-        console.log(array[4])
+    function returnLast(array) {
+        console.log(array[array.length -1])
     }
-    returnThird(numArray)
+    returnLast(numArray)
 
 })();
