@@ -1,7 +1,7 @@
 let students = ["Gerald", "mark", "Mina","Jason","Justin","justin"];
 console.log(students.length)
 
-let favFood = [ "empanadillas", "pizza","steak","crwafish", "pasta"];
+let favFood = [ "empanadillas", "pizza","steak","crawfish", "pasta"];
 console.log(students[3])
 console.log(students)
 // concatenate the lastname to the first name
@@ -22,3 +22,16 @@ let ages = [1,2,3,33,22,33]
 for (let i = 0; i <= ages.length - 1; i++){
     console.log(ages[i]*2);
 }
+console.log("org", favFood)
+console.log("reversed", favFood.reverse())
+console.log(favFood)
+console.log("sort food", favFood.sort())
+console.log("fave food as string",favFood.join())
+  let searchTerm = " soup ,salad ,sauce"
+  let parsedSearchTerms = searchTerm.split(",")
+console.log(parsedSearchTerms.sort())
+console.log(...favFood,...searchTerm)
+console.log("rice",...favFood)
+
+
+
