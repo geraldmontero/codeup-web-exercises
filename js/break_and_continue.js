@@ -9,7 +9,7 @@
 // console.log(myArray)
 let userNumber = 0
 do{
-userNumber = number(prompt("enter an odd number 1-50"));
+userNumber = Number(prompt("enter an odd number 1-50"));
 if(userNumber < 1 || userNumber > 50){
     alert('Number out of bounds')
 }else if (userNumber %2 ===0 ){
