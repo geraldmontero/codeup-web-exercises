@@ -1,8 +1,9 @@
+/*
 "use strict";
 
-/* ########################################################################## */
+/!* ########################################################################## *!/
 
-/**
+/!**
  * TODO:
  * Create a function named `analyzeColor` that accepts a string that is a color
  * name as input. This function should return a message which relates to the
@@ -20,8 +21,8 @@
  *
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
- */
-/**
+ *!/
+
 function analyzeColor(color) { if (color = "red"){
     console.log("red like Blood")
 }else if (color = "orange"){
@@ -46,17 +47,17 @@ function analyzeColor(color) { if (color = "red"){
 //                  will contain a different color every time the page loads)
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
-/**
+/!**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
- */
-
-/**
+ *!/
+analyzeColor(randomColor)
+/!**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
- */
-/**
+ *!/
+
 let analyzeColor = "red"
 switch (analyzeColor) {
     case "red":
@@ -75,14 +76,14 @@ switch (analyzeColor) {
         console.log('violet is a nice color')
 
 }
-**/
-/**
+
+/!**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
- */
-/*
+ *!/
+
 function analyzeColor(color) { if (color === "red"){
     alert("red like Blood")
 }else if (color === "orange"){
@@ -100,9 +101,9 @@ function analyzeColor(color) { if (color === "red"){
 }
 let pickColor = prompt("Please enter a color")
 analyzeColor(pickColor)
-/* ########################################################################## */
+/!* ########################################################################## *!/
 
-/**
+/!**
  * TODO:
  * Suppose there's a promotion in Walmart, each customer is given a randomly
  * generated "lucky number" between 0 and 5. If your lucky number is 0 you have
@@ -120,7 +121,7 @@ analyzeColor(pickColor)
  *
  * Test your function by passing it various values and checking for the expected
  * return value.
- */
+ *!/
 function calculateTotal(luckyNum, total) {
 if (luckyNum === 0){
     return total;
@@ -138,19 +139,19 @@ if (luckyNum === 0){
 
 console.log(calculateTotal(4,100))
 
-/**
+/!**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
  * (In this line of code, 0 is inclusive, and 6 is exclusive)
  * Prompt the user for their total bill, then use your `calculateTotal` function
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
- */
+ *!/
 // Generate a random number between 0 and 6
  var luckyNumber = Math.floor(Math.random() * 6);
 let totalbill = prompt(" what is your total bill" )
 alert( "your lucky number was  " + luckyNumber + " your total is  " +  calculateTotal(luckyNumber,totalbill))
-/**
+/!**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
  * would like to enter a number. If they click 'Ok', prompt the user for a
@@ -167,7 +168,8 @@ alert( "your lucky number was  " + luckyNumber + " your total is  " +  calculate
  *
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
- */
+ *!/
+*/
 
 
 let r = confirm("Would you like to pick a number");
