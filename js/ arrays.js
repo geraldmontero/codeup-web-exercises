@@ -16,3 +16,9 @@ favFood[1]= favFood[1] + " 3rd fave"
 console.log(favFood)
 let valIndexZero = students[0]
 console.log(valIndexZero)
+//methods
+//methods are pre existing functions parseInt(),console.log(), ect
+let ages = [1,2,3,33,22,33]
+for (let i = 0; i <= ages.length - 1; i++){
+    console.log(ages[i]*2);
+}
