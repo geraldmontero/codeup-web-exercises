@@ -11,7 +11,15 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
+    let person  = {
+        firstName :"Gerald ",
+        lastName :  "Montero",
+        sayHello: function () {
+            return "Hello from " + this.firstName + " " + this.lastName
+        },
+    };
 
+    console.log(person.firstName)
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -22,6 +30,7 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
+    console.log(person.sayHello())
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -36,11 +45,25 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+    // shoppers.forEach(function (){
+    //     if (shoppers.amount >= 200){
+    //         console.log(name.name +', you get a discount.' + ' Your total is' +  (name.amount -(name.amount * .12) ))
+    //     }else{
+    //         console.log(name.name + ' You didnt spend enough for the discount')
+    //     }
+    // })
+    shoppers.forEach(function  (name){
+        if (name.amount >= 200) {
+            console.log(name.name +', you get a discount.' + ' Your total is $' +  (name.amount -(name.amount * .12) ))
+        } else {
+            console.log(name.name + ' you didnt spend enough for the discount.')
+        }
+    })
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -54,6 +77,12 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    var books = [
+        {title: ' Crazy Cameron', author: 'JJ Knox' },
+        {title: 'Ryan Reacher', author: 'Tom Cruise'},
+        {title: 'George goes to the White House', author: ' Dick Cheney'},
+    ]
+
 
     /**
      * TODO:
@@ -79,7 +108,9 @@
      *      ---
      *      ...
      */
-
+    books.forEach(function (book,index){
+        console.log('book number '+ (index +1)  + ' ' + 'Title:' + book.title + ' by ' + book.author )
+    })
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
