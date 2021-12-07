@@ -57,11 +57,11 @@
     //         console.log(name.name + ' You didnt spend enough for the discount')
     //     }
     // })
-    shoppers.forEach(function  (name){
-        if (name.amount >= 200) {
-            console.log(name.name +', you get a discount.' + ' Your total is $' +  (name.amount -(name.amount * .12) ))
+    shoppers.forEach(function  (shopper){
+        if (shopper.amount >= 200) {
+            console.log(shopper.name +', you get a 12% discount.' + ' Your total is $' +  (shopper.amount -(shopper.amount * .12) ))
         } else {
-            console.log(name.name + ' you didnt spend enough for the discount.')
+            console.log(shopper.name + ' you didnt spend enough for the discount.  ' + `your total is ${shopper.amount}`)
         }
     })
 
