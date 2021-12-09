@@ -1,0 +1,9 @@
+/*style sheet for welcome html*/
+    header { text-align: center;
+             color: cornflowerblue;
+             text-decoration: underline }
+.fancy-header {
+    color: purple;
+    text-decoration: underline;
+}
+body { background-color: wheat; }
