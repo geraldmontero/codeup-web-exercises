@@ -1,9 +1,44 @@
 /*style sheet for welcome html*/
+
     header { text-align: center;
-             color: cornflowerblue;
+             /*color: cornflowerblue;*/
              text-decoration: underline }
 .fancy-header {
     color: purple;
     text-decoration: underline;
 }
-body { background-color: wheat; }
+body {
+        background-image: url(../assets/images.png);
+    /*background-color: orange;*/
+    background-size: cover;
+        background-position: center;
+         font-family: 'Source Sans Pro', sans-serif;
+    background-repeat: repeat;
+}
+ul li{
+    list-style-type: square;
+}
+
+ol li{
+   list-style-type: disc;
+}
+
+.products{
+    font-size: xx-large;
+    border: 5px blueviolet;
+}
+
+a{
+color: black;
+}
+
+a:visited{
+    color: purple;
+}
+a:hover{
+    color: cornflowerblue;
+    background-color: aquamarine;
+}
+
+
+
