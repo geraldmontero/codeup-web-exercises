@@ -4,11 +4,12 @@
              /*color: cornflowerblue;*/
              text-decoration: underline }
 .fancy-header {
-    color: purple;
+
     text-decoration: underline;
 }
 body {
-        background-image: url(../assets/images.png);
+    color: lightgray;
+        background-image: url(../assets/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg);
     /*background-color: orange;*/
     background-size: cover;
         background-position: center;
@@ -16,6 +17,7 @@ body {
     background-repeat: repeat;
 }
 ul li{
+
     list-style-type: square;
 }
 
@@ -25,7 +27,7 @@ ol li{
 
 .products{
     font-size: xx-large;
-    border: 5px blueviolet;
+    border: 5px  solid blueviolet;
 }
 
 a{
