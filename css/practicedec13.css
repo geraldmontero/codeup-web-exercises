@@ -1,0 +1,87 @@
+.container {
+    background-color: #1969B2;
+    height: 400px;
+    width: 800px;
+    border: solid black;
+    margin: 10px;
+    position: relative;
+    /*display: inline-block;*/
+}
+.box{
+    color: white;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: solid crimson;
+   margin: 5px;
+
+
+}
+#boxOne{
+   position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#boxTwo{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#boxThree{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+#boxFour{
+
+    position: absolute;
+   bottom: 10px;
+    right: 10px;
+}
+
+.text{
+    font-size: 20px;
+}
+/*#itemOne{*/
+
+/*    border: solid black;*/
+/*    margin: 10px;*/
+/*    background-color: black;*/
+/*    float: right;*/
+/*}*/
+/*#itemTwo{*/
+
+/*    border: solid black;*/
+/*    margin: 10px;*/
+/*    background-color: green;*/
+/*}*/
+/*#itemThree{*/
+
+/*    border: solid black;*/
+/*    margin: 10px;*/
+/*    background-color: red;*/
+
+/*}*/
+/*#itemfour{*/
+
+/*    border: solid black;*/
+/*    margin: 10px;*/
+/*    background-color: blue;*/
+
+/*}*/
+/*p{*/
+/*    text-align: right;*/
+/*}*/
+/*#boxOne, #boxThree{*/
+/*    float: left;*/
+/*}*/
+/*#textOne ,#textThree{*/
+/*    float: right;*/
+/*}*/
+/*#boxTwo, #boxFour{*/
+/*    float: right;*/
+/*}*/
+/*#textTwo ,#textFour{*/
+/*    float: left;*/
+/*}*/
