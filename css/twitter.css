@@ -84,10 +84,11 @@ a {
 }
 .profile-image{
     position: absolute;
-    top: -50px;
+    top: -20px;
 }
 .profile-form{
     float: right;
+    line-height: 80px;
 }
 .profile-details{
 float: left;
