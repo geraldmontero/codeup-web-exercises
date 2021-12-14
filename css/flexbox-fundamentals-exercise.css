@@ -81,18 +81,15 @@ section:nth-of-type(1) div:last-child {
 }
 
 section:nth-of-type(3) {
-    display: flex;
+
     /*align-content:end;*/
-    justify-content: right;
+   align-items: center;
     /*align-items: end;*/
     /* enter needed declarations here */
 }
 
 section:nth-of-type(3) h3 {
-    align-self: center ;
-    justify-self: left ;
-
-
+    flex-grow: 2;
     /* enter needed declarations here */
 
 }
@@ -109,9 +106,7 @@ section:nth-of-type(3) h3 {
     height: 5em;
     width: 5em;
     background: brown;
-    display: flex;
-    justify-content: space-around;
-    justify-items: stretch;
+    flex-grow: 3;
 
     /* enter needed declarations here */
 }
@@ -122,8 +117,8 @@ section:nth-of-type(3) h3 {
 
 section:nth-of-type(5) {
     /* enter needed declarations here */
-    display:flex ;
-    justify-content: space-around;
+
+    justify-content: space-evenly;
 
 }
 
@@ -136,9 +131,9 @@ section:nth-of-type(5) {
 section:nth-of-type(6) {
     background: coral;
     height: 14em;
-    display: flex;
     flex-wrap: wrap;
     justify-content:space-between ;
+    align-items: center;
 }
 
 .grey-box {
