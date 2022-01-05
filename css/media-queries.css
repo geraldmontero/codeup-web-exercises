@@ -1,0 +1,8 @@
+footer{
+    display: flex;
+    align-content: space-between;
+}
+footer ul{
+    display: flex;
+    align-content: space-between;
+}

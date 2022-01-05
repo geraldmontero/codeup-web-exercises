@@ -1,0 +1,13 @@
+.jumbotron {
+    background-image: url(../assets/pizza.png);
+    background-size: cover;
+}
+.display-4{
+    /*box-sizing: border-box;*/
+    /*width: 100%;*/
+    /*align-items: center;*/
+    /*background:white  ;*/
+    /*!*background-size: 100%;*!*/
+    /*text-align: center;*/
+    opacity:.5;
+}
