@@ -24,3 +24,4 @@
 // for (var i =0; i < myElemts.length; i++){
 //     myElemts[i].innerHTML = "hello world"
 // }
+
