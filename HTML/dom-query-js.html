@@ -24,7 +24,10 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
-
+<button id="chgHead">Change Header</button>
+<button id="chgSub">Change Sub Header</button>
+<button id="greyItems">Every other item</button>
+<button id="dbBlue">DB1 to Blue</button>
 <script>
     (function() {
         "use strict";
@@ -32,27 +35,48 @@
             var mainHeader = document.getElementById("main-header") ;
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-            mainHeader.innerHTML = "JavaScript is Cool"
+            var chgHead = document.getElementById("chgHead");
+        console.log(chgHead);
+           chgHead.addEventListener("click", function () {
+               mainHeader.innerHTML = "JavaScript is Cool";
+           })
 
         // TODO: Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById("sub-header");
 
         // TODO: Set the text color of subHeader to blue
+
+            var chgSub = document.getElementById("chgSub");
+            chgSub.addEventListener("click",function () {
                 subHeader.style.color = "blue";
+            })
+
+
         // TODO: Uncomment the next line and get all list items
-        var listItems = document.getElementsByTagName("li") ;
+            var listItems = document.getElementsByTagName("li") ;
 
         // TODO: Set text color on every other list item to grey
-            for ( var i = 0; i < listItems.length; i += 2){
-                listItems[i].style.color = "grey"
-        }
+                var greyList = document.getElementById("greyItems");
+                greyList.addEventListener("click",function () {
+                    for ( var i = 0; i < listItems.length; i += 2){
+                        listItems[i].style.color = "grey"
+                    }
+                })
+
 
         // TODO: Set text color of li with dbid = 1 to blue
         //
         //     var dbId = listItems[0].getAttribute("data-dbid");
         //     console.log(dbId);
         //     dbId.text.color = "blue"
-            listItems[0].style.color = "blue"
+
+        var dbBlue = document.getElementById("dbBlue");
+                dbBlue.addEventListener("click",function () {
+                    listItems[0].style.color = "blue"
+                })
+
+
+
 
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
