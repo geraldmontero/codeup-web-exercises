@@ -28,6 +28,7 @@
 <button id="chgSub">Change Sub Header</button>
 <button id="greyItems">Every other item</button>
 <button id="dbBlue">DB1 to Blue</button>
+<button id="mission">Mission accomplished</button>
 <script>
     (function() {
         "use strict";
@@ -70,8 +71,8 @@
         //     console.log(dbId);
         //     dbId.text.color = "blue"
 
-        var dbBlue = document.getElementById("dbBlue");
-                dbBlue.addEventListener("click",function () {
+        // var dbBlue = ;
+        document.getElementById("dbBlue").addEventListener("click",function () {
                     listItems[0].style.color = "blue"
                 })
 
@@ -81,9 +82,13 @@
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName("sub-paragraph");
-
+        var mission = document.getElementById("mission");
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-                subParagraphs[0].textContent = "Mission Accomplished";
+               mission.addEventListener("click", function () {
+                   subParagraphs[0].textContent = "Mission Accomplished";
+
+               })
+
 
     })();
 </script>
