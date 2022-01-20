@@ -1,6 +1,3 @@
-$("#p-one")
-console.log($("#p-one"))
-
 //
 // let heading = $("#heading")
 // console.log(heading)
@@ -17,17 +14,26 @@ console.log($("#p-one"))
 // assign a class to the element, if true
 
 
-let user1 = {
-    name: "Gerald",
-    isLoggedIn : true,
-    age: 31
-}
+// let user1 = {
+//     name: "Gerald",
+//     isLoggedIn : true,
+//     age: 31
+// }
+//
+// let loginStatus = user1.isLoggedIn;
+//
+// if(loginStatus === true){
+//     $("#heading").addClass("border")
 
-let loginStatus = user1.isLoggedIn;
-
-if(loginStatus === true){
-    $("#heading").addClass("border")
-}
 $(document).ready(function() {
     alert( 'The DOM has finished loading!' );
 });
+// alert($('#first'));
+// alert($('#first').get(0));
+
+$('#p-one').click(function () {
+    alert($('#p-one').text())
+})
+
+
+
