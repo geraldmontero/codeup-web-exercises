@@ -28,3 +28,6 @@ let loginStatus = user1.isLoggedIn;
 if(loginStatus === true){
     $("#heading").addClass("border")
 }
+$(document).ready(function() {
+    alert( 'The DOM has finished loading!' );
+});
