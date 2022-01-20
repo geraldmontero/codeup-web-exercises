@@ -25,15 +25,31 @@
 // if(loginStatus === true){
 //     $("#heading").addClass("border")
 
-$(document).ready(function() {
-    alert( 'The DOM has finished loading!' );
-});
+
+
+
+// alert the dom
+// $(document).ready(function() {
+//     alert( 'The DOM has finished loading!');
+// });
 // alert($('#first'));
 // alert($('#first').get(0));
 
-$('#p-one').click(function () {
-    alert($('#p-one').text())
-})
+// $('#p-one').click(function () {
+//     alert($('#p-one').text())
+// })
+//
+// // remove class
+// $("#p-one").removeClass("codeup")
+// // add a border
+// $(".codeup").css('border','1px solid red')
+
+$("li").css({"font-size":"20px", "color":"red"} )
+//
+// $("p").css({"background":"yellow"} )
+// $("h1").css({"background":"yellow"} )
+// $("li").css({"background":"yellow"} )
+alert($('h1').text())
 
 
-
+$("p, h1, li ").css({"background":"yellow"} )
