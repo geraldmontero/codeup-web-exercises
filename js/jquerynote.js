@@ -44,12 +44,30 @@
 // // add a border
 // $(".codeup").css('border','1px solid red')
 
-$("li").css({"font-size":"20px", "color":"red"} )
+// $("li").css({"font-size":"20px", "color":"red"} )
+// //
+// // $("p").css({"background":"yellow"} )
+// // $("h1").css({"background":"yellow"} )
+// // $("li").css({"background":"yellow"} )
+// alert($('h1').text())
 //
-// $("p").css({"background":"yellow"} )
-// $("h1").css({"background":"yellow"} )
-// $("li").css({"background":"yellow"} )
-alert($('h1').text())
+//
+// $("p, h1, li ").css({"background":"yellow"} )
+let heading = $("#heading")
+heading.click(function () {
+    heading.css({"background":"purple"})
+})
 
+let p = $("p")
 
-$("p, h1, li ").css({"background":"yellow"} )
+p.dblclick(function () {
+    p.css({"font-size": "18px"})
+})
+
+let li = $("li")
+
+li.hover(function () {
+    li.css({'color':'red'})
+},function () {
+    li.css({'color':'black'})
+})
