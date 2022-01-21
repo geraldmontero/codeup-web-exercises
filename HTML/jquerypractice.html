@@ -19,6 +19,11 @@
             <link href=“https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Questrial&display=swap” rel=“stylesheet”>
 <!--           font-family: ‘Abril Fatface’, cursive;-->
 <!--             font-family: ‘Questrial’, sans-serif;-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+
 
 </head>
 <body>
@@ -139,10 +144,20 @@
 
 $("td").css("border", " 1px solid black")
 $("ul").css('list-style', 'none')
-$("*").css('font-family','Abril Fatface')
-
+$("body").css({'font-family':'Luxurious Roman'})
+$('section').attr('id','sect1')
+$(".section-one").attr("id","sect2")
+$('#sect1').css({'background':'red'})
+$('#sect2').css({'background':'blue'})
+$('a, ol ,table').attr('class','highlight')
+$('.highlight').css({'background':'yellow'})
+$('#floofers').mousedown(function () {
+    $(this).css({'transition':'2s','transform': 'scale(2.5, 2.5)'})
+})
+$('#floofers').mouseup(function () {
+    $(this).css({'transition':'2s','transform': 'revert'})
+})
 </script>
-
 
 
 

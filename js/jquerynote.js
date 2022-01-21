@@ -53,21 +53,24 @@
 //
 //
 // $("p, h1, li ").css({"background":"yellow"} )
+// Mouse Events practice
 let heading = $("#heading")
 heading.click(function () {
     heading.css({"background":"purple"})
 })
 
 let p = $("p")
-
+// let clickhandler = ()=>{
+//     $(this).css({"font-size": "18px"})
+};
 p.dblclick(function () {
-    p.css({"font-size": "18px"})
+    $(this).css({"font-size": "18px"})
 })
-
+// p.dblclick(clickhandler)
 let li = $("li")
 
 li.hover(function () {
-    li.css({'color':'red'})
+    $(this).css({'color':'red'})
 },function () {
-    li.css({'color':'black'})
+    $(this).css({'color':'black'})
 })
