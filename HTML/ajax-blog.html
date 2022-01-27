@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        .bgblog{
+            background-image: url("/assets/blog.jpeg");
+            /*background-repeat: no-repeat;*/
+            background-size: 100%;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+
+
+    <title>Document</title>
+</head>
+<body >
+<header class="align-text-center container">
+<h1 class="display-1 text-center"> My Blog </h1>
+</header>
+
+<div class="container">
+    <div class="jumbotron bgblog ">
+        <div class="align-content-center" id="post">
+        </div>
+    </div>
+</div>
+</body>
+
+
+<script>
+    $.ajax("/js/data/blog.json").done(function (data) {
+        console.log(data)
+    });
+    $.ajax("/js/data/blog.json")
+        .done(function (data) {
+            $(data).each(function (element) {
+                $('#post').append('<div class="card-body">', '<h3>' + data[element].title + '</h3>');
+                $('#post').append('<p class="card-columns">' + data[element].content + '</p>');
+                $('#post').append('<p class="card-columns">' + data[element].categories + '</p>');
+                $('#post').append('<p class="card-columns">' + data[element].date + '</p>', '</div>');
+
+                console.log(data)
+
+            })
+
+        })
+
+
+</script>
+
+
+</html>
