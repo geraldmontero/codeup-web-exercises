@@ -1,1 +1,2 @@
 const mapkey ='pk.eyJ1IjoiZ2VyYWxkbW9udGVybzEyIiwiYSI6ImNreXhoZW1xOTA2eHMydm56dHptMW04Zm4ifQ.njJg4xeF6JTyDWmHwZvGgA'
+const weathermap = '2e0a4718be01cfd3c1db88bc4cddb2ba'

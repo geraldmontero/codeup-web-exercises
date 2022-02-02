@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<h1>My First Mapbox Map!</h1>
+<h1>Map box Exercises!</h1>
 
 <!-- The HTML element that serves as the Mapbox container -->
 <div id='map'></div>
@@ -38,29 +38,56 @@
         zoom: 10,
         center: [-98.4916, 29.4252]
     });
-
-    // // the  geocode method from mapbox-geocoder-utils.js
-   geocode("2090 Broadway, New York, NY 10023", mapkey).then(function(result) {
+let restaurants = [" Nobi's Public House 241 E NASA Pkwy, Webster, TX 77598","Gray's Papaya 2090 Broadway, New York, NY 10023","241 E NASA Pkwy, Webster, TX 77598","My House 1406 Lost Ridge Circle, Seabrook, TX 77586" ];
+//   // loop through result arrray (foreach ,map ,for )
+    // result.forEach(element => console.log(element));
+    //  // inside of loop push each value to grays array
+restaurants.forEach(function (restaurant) {
+    geocode(restaurant, mapkey).then(function(result) {
         console.log(result);
-      //   // loop through result arrray (foreach ,map ,for )
-      // result.forEach(element => console.log(element));
-      //  // inside of loop push each value to grays array
+
         map.setCenter(result);
-        map.setZoom(15);
-        const grays = result;
-       console.log(grays)
+        map.setZoom(10);
+        var addPopup = new mapboxgl.Popup()
+            .setHTML(restaurant);
+        var marker = new mapboxgl.Marker()
+            .setLngLat(result)
+            .addTo(map)
+            .setPopup(addPopup);
+            // allMarkers.push(marker);
+            // let allMarkers = []
 
+
+
+        // marker.setPopup(addPopup)
     });
-    var marker = new mapboxgl.Marker()
-        .setLngLat(
-        grays)
-        .addTo(map);
+})
+   //  // // the  geocode method from mapbox-geocoder-utils.js
+   // geocode(restaurant, mapkey).then(function(result) {
+   //      console.log(result);
+   //    //   // loop through result arrray (foreach ,map ,for )
+   //    // result.forEach(element => console.log(element));
+   //    //  // inside of loop push each value to grays array
+   //      map.setCenter(result);
+   //      map.setZoom(15);
+   //     var marker = new mapboxgl.Marker()
+   //         .setLngLat(result
+   //         )
+   //         .addTo(map);
+   //
+   //
+   //     var graysPopup = new mapboxgl.Popup()
+   //         .setHTML("<p>Best Hotdogs in NYC!</p>")
+   //
+   //     marker.setPopup(graysPopup)
+   //  });
+   //  // var marker = new mapboxgl.Marker()
+   //  //     .setLngLat(-73.98159, 40.77835
+   //  //    )
+   //  //     .addTo(map);
 
 
-    var graysPopup = new mapboxgl.Popup()
-        .setHTML("<p>Best Hotdogs in NYC!</p>")
 
-    marker.setPopup(graysPopup)
 
 
 </script>

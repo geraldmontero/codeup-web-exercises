@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 80%;
+            height: 300px;
+        }
+        .newCard{
+            width: 75%;
+        }
+    </style>
+    <title>Weather App</title>
+
+
+</head>
+<body>
+<nav class="d-flex navbar navbar-light bg-light justify-content-center">
+    <a class="navbar-brand">Gerry's Weather App</a>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Enter City" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+<div class="container">
+    <div class="row">
+    <div class=" d-flex justify-content-center newCard">
+
+    </div>
+    </div>
+
+<hr>
+<div class="col-12" id="map">
+
+</div>
+</div>
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="../js/jquery-2.2.4.js"></script>
+<script src="../js/keys.js"></script>
+<script src="../js/weathermap.js"></script>
+
+</body>
+
+</html>
