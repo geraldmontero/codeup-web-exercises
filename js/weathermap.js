@@ -119,10 +119,10 @@ markers[0].remove();
                 console.log(wIcon)
 
                 $('.newCard').append(` <div class="col-sm-3">
-        <div class="card bg-light ">
-            <h5 class=" text- center card-title">${dt_txt}</h5>
+        <div class="card  ">
+            <h5 class="  headings text-center card-title">${dt_txt}</h5>
             
-            <div class="card-body">
+            <div class="card-body bgsand ">
                 <ul class="list-group list-group-flush">
                 <p><img src="https://openweathermap.org/img/wn/${wIcon}.png" class="card-img-top" alt=".ICONS FROM WEATHER API.." style = "height: 4em; width: 4em;" ></p>
                     <p  class="card-text">${desc}</p>
