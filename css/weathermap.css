@@ -1,0 +1,25 @@
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    border: solid grey;
+    background-color: #A8AEC1;
+}
+
+#map {
+    /* the width and height may be set to any size */
+    width: 80%;
+    height: 300px;
+
+}
+
+.newCard {
+    width: 75%;
+
+}
+
+.bgsand {
+    background-color: #B5D2CB
+}
+.headings{
+    background-color: #B7C0CC;
+}
