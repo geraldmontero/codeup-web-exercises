@@ -15,41 +15,69 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto+Condensed&display=swap"
+          rel="stylesheet">
+
+
     <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            border: solid grey;
+            background-color: #90708c;
+        }
+
         #map {
             /* the width and height may be set to any size */
             width: 80%;
             height: 300px;
+
         }
-        .newCard{
+
+        .newCard {
             width: 75%;
+
+        }
+
+        .bgsand {
+           background-color: #E1CDB5
+        }
+        .headings{
+            background-color: #ACE4AA;
         }
     </style>
     <title>Weather App</title>
 
 
 </head>
-<body>
-<nav class="d-flex navbar navbar-light bg-light justify-content-center">
+<body class=" container-fluid ">
+<nav class="d-flex navbar navbar-light headings justify-content-center">
     <a class="navbar-brand">Gerry's Weather App</a>
-    <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Enter City" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <!--    <form class="form-inline">-->
+    <!--        <input class="form-control mr-sm-2" type="search" placeholder="Enter City" aria-label="Search">-->
+    <!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+    <!--    </form>-->
 </nav>
 <div class="container">
     <div class="row">
-    <div class=" d-flex justify-content-center newCard">
+        <div class=" col  p-3 rounded d-flex justify-content-center newCard">
 
+        </div>
     </div>
+
+    <hr>
+    <div class="row">
+        <div class=" shadow-lg p-3 mb-5  bg-light rounded col-12" id="map">
+
+        </div>
     </div>
-
-<hr>
-<div class="col-12" id="map">
-
 </div>
-</div>
-
+<!-- Load the `mapbox-gl-geocoder` plugin. -->
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
+      type="text/css">
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <script src="../js/jquery-2.2.4.js"></script>
 <script src="../js/keys.js"></script>
