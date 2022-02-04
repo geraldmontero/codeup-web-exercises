@@ -110,7 +110,7 @@ markers[0].remove();
             sliced.forEach(function (date) {
                 dt_txt = new Date (date.dt * 1000).toLocaleDateString("en",{
                     weekday:"long",
-
+              
                 });
                 wIcon = date.weather[0].icon;
                 desc = date.weather[0].description;
